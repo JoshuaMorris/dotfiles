@@ -96,5 +96,21 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+# Install casks used
+brew cash install spectacle
+brew cask install dropbox
+brew cask install appcleaner
+
+# Browsers
+brew cask install google-chrome
+brew cask install google-chrome-canary
+brew cask install firefox
+brew cask install firefoxdeveloperedition
+brew cask install webkit-nightly
+brew cask install chromium
+brew cask install opera
+brew cask install opera-developer
+
+
 # Remove outdated versions from the cellar.
 brew cleanup
