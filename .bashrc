@@ -1,1 +1,2 @@
-[ -n "$PS1" ] && source ~/.bash_profile;
+
+neofetch && [ -n "$PS1" ] && source ~/.bash_profile;
