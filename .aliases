@@ -50,11 +50,16 @@ alias sudo='sudo '
 alias week='date +%V'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+alias update='brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup; sudo softwareupdate -i -a'
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
+alias safari='/Applications/Safari.app/Contents/MacOS/Safari'
+alias operadev='/Applications/Opera\ Developer.app/Contents/MacOS/Opera'
+alias opera='/Applications/Opera.app/Contents/MacOS/Opera'
+alias ffdev='/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox'
+alias ff='/Applications/Firefox.app/Contents/MacOS/firefox'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
