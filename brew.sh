@@ -43,7 +43,6 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install php
 brew install gmp
 
 # Install font tools.
@@ -96,21 +95,35 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
-# Install casks used
-brew cash install spectacle
+# Install casks used daily
+brew cask install iterm2
+brew cask install spectacle
 brew cask install dropbox
 brew cask install appcleaner
+brew cask install franz
+brew cask install rescuetime
+brew cask install macdown
+brew cask install mtmr
+
+# Nice things to have
+brew cask install aerial
+brew cask install fliqlo
+brew install neofetch
+
+# Install web development tools
+brew install node
+brew install golang
+brew install mongodb
+brew cask install postman
+brew cask install sequel-pro
 
 # Browsers
 brew cask install google-chrome
-brew cask install google-chrome-canary
+brew cask install homebrew/cask-versions/google-chrome-canary
 brew cask install firefox
-brew cask install firefoxdeveloperedition
-brew cask install webkit-nightly
-brew cask install chromium
+brew cask install homebrew/cask-versions/firefox-developer-edition
 brew cask install opera
-brew cask install opera-developer
-
+brew cask install homebrew/cask-versions/opera-developer
 
 # Remove outdated versions from the cellar.
 brew cleanup
