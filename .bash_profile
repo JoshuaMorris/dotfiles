@@ -1,16 +1,5 @@
 neofetch
 
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
-# Add Golang env vars
-export GOPATH=$HOME/go
-export GOSRC=$GOPATH/src
-export GOPKG=$GOPATH/pkg
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.

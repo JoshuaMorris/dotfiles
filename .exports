@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
+
+# Add Golang env vars
+export GOPATH=$HOME/go
+export GOSRC=$GOPATH/src
+export GOPKG=$GOPATH/pkg
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
 # Make vim the default editor.
 export EDITOR='vim';
 
