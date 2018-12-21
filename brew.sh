@@ -103,7 +103,7 @@ brew cask install appcleaner
 brew cask install franz
 brew cask install rescuetime
 brew cask install macdown
-brew cask install mtmr
+#brew cask install mtmr
 
 # Nice things to have
 brew cask install aerial
@@ -116,6 +116,35 @@ brew install golang
 brew install mongodb
 brew cask install postman
 brew cask install sequel-pro
+
+# Go Dev Tools
+mkdir $GOPATH
+mkdir $GOPATH/src
+mkdir $GOPATH/pkg
+mkdir $GOPATH/bin
+
+brew tap alecthomas/homebrew-tap
+brew install gometalinter
+
+# https://github.com/Microsoft/vscode-go/wiki/Go-tools-that-the-Go-extension-depends-on
+go get -u -v github.com/ramya-rao-a/go-outline
+go get -u -v github.com/acroca/go-symbols
+go get -u -v github.com/mdempsky/gocode
+go get -u -v github.com/rogpeppe/godef
+go get -u -v golang.org/x/tools/cmd/godoc
+go get -u -v github.com/zmb3/gogetdoc
+go get -u -v golang.org/x/lint/golint
+go get -u -v github.com/fatih/gomodifytags
+go get -u -v golang.org/x/tools/cmd/gorename
+go get -u -v sourcegraph.com/sqs/goreturns
+go get -u -v golang.org/x/tools/cmd/goimports
+go get -u -v github.com/cweill/gotests/...
+go get -u -v golang.org/x/tools/cmd/guru
+go get -u -v github.com/josharian/impl
+go get -u -v github.com/haya14busa/goplay/cmd/goplay
+go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs
+go get -u -v github.com/davidrjenni/reftools/cmd/fillstruct
+gometalinter --install
 
 # Browsers
 brew cask install google-chrome
