@@ -95,6 +95,9 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+# Open up the cask
+brew tap homebrew/cask
+
 # Install casks used daily
 brew cask install iterm2
 brew cask install spectacle
@@ -116,6 +119,9 @@ brew install golang
 brew install mongodb
 brew cask install postman
 brew cask install sequel-pro
+
+# Git mergetool
+brew cask install meld
 
 # Go Dev Tools
 mkdir $GOPATH
